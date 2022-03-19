@@ -30,9 +30,9 @@ def th():
 	print(msg)
 	
 
-a = thread.Threading(target=th)
+a = threading.Thread(target=th)
 
-b = thread.Threading(target=th)
+b = threading.Thread(target=th)
 
 a.run()
 
