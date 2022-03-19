@@ -30,4 +30,14 @@ def th():
 	print(msg)
 	
 
-th()
+a = thread.Threading(target=th)
+
+b = thread.Threading(target=th)
+
+a.run()
+
+b.run()
+
+a.join()
+
+b.join()
